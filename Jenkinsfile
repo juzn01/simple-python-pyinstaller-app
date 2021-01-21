@@ -34,6 +34,7 @@ pipeline {
             }
             steps {
                 sh 'pyinstaller --onefile sources/add2vals.py'
+                sh 'echo "hello from Me"'
             }
             post {
                 success {
